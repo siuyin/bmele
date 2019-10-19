@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"html"
 	"log"
 	"net/http"
 
@@ -14,7 +13,7 @@ func main() {
 
 	// root handler
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello, path is: %q\n", html.EscapeString(r.URL.Path))
+		http.Redirect(w, r, "/static/", http.StatusFound)
 	})
 
 	// static content handler

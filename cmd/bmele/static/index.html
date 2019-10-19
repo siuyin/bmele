@@ -8,33 +8,31 @@
     <body>
         <h1>Blind Men and the Elephant:</h1>
         <div id="pick-result" class="pickResult">Nothing Selected</div>
-        <form class="pure-form pure-form-stacked">
+        <form class="pure-form">
             <fieldset>
-                <label for"vangle" class="big">Field of View</label>
+                <label for"vangle" class="big">Field of View (deg.)</label>
                 <input id="vangle" type="number" placeholder="2">
 
                 <label for"date" class="big">Date</label>
-                <input id="date" type="date">
+                <input id="date" type="date" value="2019-10-20">
             </fieldset>
         </form>
         <canvas id="canvasOne" width="800" height="600">
             Your browser does not support HTML5 Canvas.
         </canvas>
-        <div class="sats">
+        <div class="sats" id="sats">
+            <p>Sensors</p>
+            <ul>
+                <li><a href="images.html">Images: various wavelegths</a></li>
+                <li><a href="lband.html">L-Band radio waves for moisture detection</a></li>
+                <li><a href="grav.html">Mass: gravity measurements</a></li>
+            </ul>
             <p>Satellites overhead</p>
             <ul>
                 <li>SMAP</li>
                 <li>GRACE-FO</li>
                 <li><a href="landsat.html">LANDSAT 8</a></li>
             </ul>
-            <p>Applications</p>
-            <ul>
-                <li>Agriculture</li>
-                <li>Weather</li>
-                <li>ObjectTracking</li>
-            </ul>
-
-            
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script 
