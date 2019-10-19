@@ -1,0 +1,11 @@
+.pickResult {
+	font-size: 3em;
+}
+.big {
+	font-size: 2em;
+}
+
+.sats {
+	float: right;
+	font-size: 2em;
+}
