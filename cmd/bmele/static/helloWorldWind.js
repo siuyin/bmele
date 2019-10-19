@@ -10,7 +10,7 @@ wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
 wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
 
 
-wwd.goTo(new WorldWind.Position(1.34,103.8,10000000.0)); // Singapore at 10,000 km altitude.
+wwd.goTo(new WorldWind.Position(1.34,103.8,300000.0)); // Singapore at 10,000 km altitude.
 
 // Keep track of the DOM element we'll use to show what's selected.
 var pickResult = document.getElementById("pick-result");
